@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+
+   
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- header section -->
+    <section id="header-section">
+        <div class="header">
+          <div class="nav-logo">
+            <h3>BOOKshelf</h3>
+          </div>
+    
+          <div class="nav-search">
+            <div class="search-box flex">
+              <button><img src="img/icons8-search-100.png" alt=""></button>
+              <div class="inp-box">
+                <input type="text" name=""  placeholder="search.......">
+              </div>
+              <button><img src="img/icons8-multiply-90.png" alt=""></button>
+              <button><img src="img/camera.png" alt=""></button>
+            </div>
+          </div>
+          <div class="nav-icon flex">
+            <div class="user-acc"><img src="img/user.svg" alt=""></div>
+            <div><a href="favorite.html"><img src="img/favorite-64.png" alt=""></a></div>
+            <div><a href="cart.html"><img src="img/cart.svg" alt=""></a></div>
+    
+            <div class="nav-toggle" id="navbar-toggle">
+              <img src="img/navtoggle.png" alt="t" width="100%">
+            </div>
+          </div>
+        </div>
+        <div class="navbar" id="navbar-link">
+          <div class="account-info">
+            <div class="acco-img flex">
+              <img src="img/myphoto.jpg" alt="">
+            </div>
+            <div class="acc-info flex">
+              <h3>Anonymous</h3>
+              <p class="p2-text">reader</p>
+            </div>
+          </div>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="aboutus.html">About US</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </section>
+
+    <!-- login form -->
+
+    <section class="login-form">
+        <div class="close-icon" onclick="close()">X</div>
+        <div class="container form-container">
+            <div class="l-form">
+                <div class="form-heading">
+                    <h3>Log In</h3>
+                </div>
+                <form action="" class="m-form">
+                    <div class="inp-div">
+                        <input type="text" name="uname" id="uname">
+                        <label for="uname">Username</label>
+                    </div>
+                    <div class="inp-div">
+                        <input type="text" name="password" id="1password">
+                        <label for="1password">Password</label>
+                    </div>
+                    <div class="inp-div">
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="inp-div f-section">
+                        <div>Forgot Password ? <span>click here</span></div>
+                        <div>New User ? Create Account <span class="ls-form" onclick="signup()">click here</span></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="s-form">
+                <div class="form-heading">
+                    <h3>Sign Up</h3>
+                </div>
+                <form action="" class="m-form">
+                    <div class="inp-div">
+                        <input type="text" name="fname" id="fname">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="inp-div">
+                        <input type="text" name="lname" id="lname">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="inp-div">
+                        <input type="email" name="email" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="inp-div">
+                        <input type="password" name="password" id="password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="inp-div">
+                        <input type="password" name="cpassword" id="cpassword">
+                        <label for="cpassword">Confirm Password</label>
+                    </div>
+                    <div class="inp-div">
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="inp-div f-section">
+                        <div>Forgot Password ? <span>click here</span></div>
+                        <div>Existing User ? Login <span class="ls-form" onclick="login()"> click here</span></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- cart section -->
+
+
+    <section class="main-favorite">
+        <div class="cart-heading flex ">
+            <img src="img/favorite-64.png" alt="cart img">
+            <h2> Favorite-Items</h2>
+        </div>
+        <div class="container fav-container flex">
+            <div class="fav-item flex">
+                 <div class="fav-img">
+                    <img src="img/book4.jpg" alt="book">
+                 </div>
+                 <div class="fav-dis flex">
+                    <div class="fav-name">Khovayela ni Khojama</div>
+                    <div class="fav-author">Jules vern</div>
+                    <div class="fav-ratting"><img src="img/rating.png" alt=""></div>
+
+                    <div class="fav-btn flex">
+                          <div class="fav-cart-btn">
+                            <button class="fav-cart-i">add to cart</button>
+                          </div>
+                          <div class="fav-del-btn">
+                            <button class="fav-del-i"><img src="img/dustbin.png" alt=""></button>
+
+                          </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="fav-item flex">
+                <div class="fav-img">
+                   <img src="img/book4.jpg" alt="book">
+                </div>
+                <div class="fav-dis flex">
+                   <div class="fav-name">Khovayela ni Khojama</div>
+                   <div class="fav-author">Jules vern</div>
+                   <div class="fav-ratting"><img src="img/rating.png" alt=""></div>
+
+                   <div class="fav-btn flex">
+                         <div class="fav-cart-btn">
+                           <button class="fav-cart-i">add to cart</button>
+                         </div>
+                         <div class="fav-del-btn">
+                           <button class="fav-del-i"><img src="img/dustbin.png" alt=""></button>
+                         </div>
+                   </div>
+                </div>
+           </div>
+           <div class="fav-item flex">
+            <div class="fav-img">
+               <img src="img/book4.jpg" alt="book">
+            </div>
+            <div class="fav-dis flex">
+               <div class="fav-name">Khovayela ni Khojama</div>
+               <div class="fav-author">Jules vern</div>
+               <div class="fav-ratting"><img src="img/rating.png" alt=""></div>
+
+               <div class="fav-btn flex">
+                     <div class="fav-cart-btn">
+                       <button class="fav-cart-i">add to cart</button>
+                     </div>
+                     <div class="fav-del-btn">
+                       <button class="fav-del-i"><img src="img/dustbin.png" alt=""></button>
+                     </div>
+               </div>
+            </div>
+       </div>
+        </div>
+    </section>
+
+
+
+  
+
+    <script>
+        const togglebutton = document.getElementById('navbar-toggle')
+        const navbarlink = document.getElementById('navbar-link')
+        const lform = document.getElementsByClassName('l-form')
+        const sform = document.getElementsByClassName('s-form')
+        const loginform = document.getElementsByClassName('login-form')
+        const cicon = document.getElementsByClassName('close-icon')
+        const usericon = document.getElementsByClassName('user-acc')
+
+        togglebutton.addEventListener('click', () => {
+            navbarlink.classList.toggle('nav-active')
+        })
+        function signup() {
+            lform[0].style.left = '-100%';
+            sform[0].style.left = '0'
+        }
+        function login() {
+            lform[0].style.left = '0';
+            sform[0].style.left = '100%';
+        }
+        cicon[0].addEventListener('click', () => {
+            loginform[0].classList.toggle('f-inactive')
+        }
+        )
+        usericon[0].addEventListener('click', () => {
+            loginform[0].classList.toggle('f-inactive')
+        })
+
+    </script>
+</body>
+
+</html>
