@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cart</title>
 
-  <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="responsive.css">
 </head>
@@ -135,7 +135,7 @@
     <h2> My Cart</h2>
   </div>
   <div class="container cart-content flex">
-    <div class="cart-items">
+    <div class="cart-items" id="cart-item">
       <div class="cart-item-heading flex">
         <div class="cart-i-img">Items</div>
         <div class="cart-i-name"></div>
@@ -155,40 +155,7 @@
         </div>
         <div class="cart-i-total">Rs. 299</div>
       </div>
-      <div class="cart-i flex">
-        <div class="cart-i-img">
-          <img src="img/book1.jpg" alt="book">
-        </div>
-        <div class="cart-i-name"><div class="book-n">The Alchemist</div>
-        <p class="p3-text book-w">Paulo coelho</p></div>
-        <div class="cart-i-price">Rs. 299</div>
-        <div class="cart-i-quantity">
-          <input type="number" name=""  min="1" max="20" value="1">
-        </div>
-        <div class="cart-i-total">Rs. 299</div>
-      </div>  <div class="cart-i flex">
-        <div class="cart-i-img">
-          <img src="img/book1.jpg" alt="book">
-        </div>
-        <div class="cart-i-name"><div class="book-n">The Alchemist</div>
-        <p class="p3-text book-w">Paulo coelho</p></div>
-        <div class="cart-i-price">Rs. 299</div>
-        <div class="cart-i-quantity">
-          <input type="number" name=""  min="1" max="20" value="1">
-        </div>
-        <div class="cart-i-total">Rs. 299</div>
-      </div>  <div class="cart-i flex">
-        <div class="cart-i-img">
-          <img src="img/book1.jpg" alt="book">
-        </div>
-        <div class="cart-i-name"><div class="book-n">The Alchemist</div>
-        <p class="p3-text book-w">Paulo coelho</p></div>
-        <div class="cart-i-price">Rs. 299</div>
-        <div class="cart-i-quantity">
-          <input type="number" name=""  min="1" max="20" value="1">
-        </div>
-        <div class="cart-i-total">Rs. 299</div>
-      </div>
+    
     </div>
     <div class="cart-bill">
        <div class="cart-bill-div flex">
@@ -231,7 +198,6 @@
 </section>
 
 
-  <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 
   <script>
     const togglebutton = document.getElementById('navbar-toggle')
@@ -262,6 +228,72 @@
     })
 
   </script>
+      <script type="text/javascript">
+
+        let book = {
+            a: ['book1.jpg', 'The Alchemist', 'Paulo Coelho', 'rs.299'],
+            b: ['book2.jpg', 'SinhPurush', 'Dr.Sarad Thakar', 'rs.299'],
+            3: ['book3.jpg', 'Aeklo Jane Re...', 'Dr.Sarad Thakar', 'rs.299'],
+            d: ['book4.jpg', 'Khovayela ni khojama', 'Jules Verne', 'rs.299']
+        }
+        function addtocart(val) {
+
+          switch (val) {
+            case 1:
+              var cImg = book.a[0]
+              var cName = book.a[1]
+              var cAuthor = book.a[2]
+              var cPrice = book.a[3]
+              break;
+            case 2:
+              var cImg = book.b[0]
+              var cName = book.b[1]
+              var cAuthor = book.b[2]
+              var cPrice = book.b[3]
+              break;
+            case 3:
+              var cImg = book.c[0]
+              var cName = book.c[1]
+              var cAuthor = book.c[2]
+              var cPrice = book.c[3]
+              break;case 4:
+              var cImg = book.d[0]
+              var cName = book.d[1]
+              var cAuthor = book.d[2]
+              var cPrice = book.d[3]
+              break;
+            default:
+              break;
+          }
+              
+
+            document.getElementById('cart-item').innerHTML +=
+                `<div class="cart-i flex">
+                   <div class="cart-i-img">
+                      <img src="img/${cImg}" alt="book">
+                   </div>
+                   <div class="cart-i-name">
+                      <div class="book-n">${cName}</div>
+                      <p class="p3-text book-w">${cAuthor}</p>
+                   </div>
+                   <div class="cart-i-price">${cPrice}</div>
+                   <div class="cart-i-quantity">
+                      <input type="number" name=""  min="1" max="20" value="1">
+                   </div>
+                   <div class="cart-i-total">${cPrice}</div>
+                </div>`
+        }
+       
+        addtocart(4);
+        addtocart(1);
+        addtocart(2);
+        addtocart(1);
+        addtocart(4);
+        addtocart(1);
+        addtocart(2);
+        addtocart(1);
+        
+    </script>
 </body>
 
 </html>
