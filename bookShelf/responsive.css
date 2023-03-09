@@ -271,6 +271,19 @@
     .a-app-info {
         width: 100%;
     }
+    .b-detailed-content{
+        flex-direction: column;
+    }
+    .b-d-content-img{
+        width: 100%;
+        height: 100vw;
+    }
+    .b-d-content-text{
+        width: 100%;
+    }
+    .detailed-item{
+        padding: 40px 20px;
+    } 
 }
 
 @media screen and (max-width : 560px) {
@@ -311,7 +324,7 @@
     }
 
     .padding-2 {
-        padding: 50px 10px;
+        padding: 30px 10px;
     }
 
     section {
@@ -426,4 +439,10 @@
         float: none;
         gap: 10px;
     }
+    .b-d-content-text {
+        padding: 20px 10px;
+     }
+    .detailed-item {
+         padding: 20px 0 0 ;
+      }
 }
